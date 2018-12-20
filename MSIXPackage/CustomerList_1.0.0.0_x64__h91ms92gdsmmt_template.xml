@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<MsixPackagingToolTemplate xmlns="http://schemas.microsoft.com/appx/msixpackagingtool/template/2018">
+  <Settings AllowTelemetry="true" ApplyAllPrepareComputerFixes="false" GenerateCommandLineFile="true" AllowPromptForPassword="false" EnforceMicrosoftStoreVersioningRequirements="true">
+    <ExclusionItems>
+      <FileExclusion ExcludePath="[{CryptoKeys}]" />
+      <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Crypto" />
+      <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Search\Data" />
+      <FileExclusion ExcludePath="[{Cookies}]" />
+      <FileExclusion ExcludePath="[{History}]" />
+      <FileExclusion ExcludePath="[{Cache}]" />
+      <FileExclusion ExcludePath="[{Personal}]" />
+      <FileExclusion ExcludePath="[{Profile}]\Local Settings" />
+      <FileExclusion ExcludePath="[{Profile}]\NTUSER.DAT.LOG1" />
+      <FileExclusion ExcludePath="[{Profile}]\NTUSER.DAT.LOG2" />
+      <FileExclusion ExcludePath="[{Recent}]" />
+      <FileExclusion ExcludePath="[{Windows}]\Debug" />
+      <FileExclusion ExcludePath="[{Windows}]\Logs\CBS" />
+      <FileExclusion ExcludePath="[{Windows}]\Temp" />
+      <FileExclusion ExcludePath="[{Windows}]\WinSxS\ManifestCache" />
+      <FileExclusion ExcludePath="[{Windows}]\WindowsUpdate.log" />
+      <FileExclusion ExcludePath="[{Windows}]\Installer" />
+      <FileExclusion ExcludePath="[{AppVPackageDrive}]\$Recycle.Bin" />
+      <FileExclusion ExcludePath="[{AppVPackageDrive}]\System Volume Information" />
+      <FileExclusion ExcludePath="[{AppData}]\Microsoft\AppV" />
+      <FileExclusion ExcludePath="[{Local AppData}]\Packages" />
+      <FileExclusion ExcludePath="[{Local AppData}]\Temp" />
+      <FileExclusion ExcludePath="[{Local AppData}]\Microsoft\Windows" />
+      <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Microsoft Security Client" />
+      <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Microsoft Antimalware" />
+      <FileExclusion ExcludePath="[{Common AppData}]\Microsoft\Windows Defender" />
+      <FileExclusion ExcludePath="[{ProgramFiles}]\Microsoft Security Client" />
+      <FileExclusion ExcludePath="[{ProgramFiles}]\Windows Defender" />
+      <FileExclusion ExcludePath="[{ProgramFiles}]\WindowsApps" />
+      <FileExclusion ExcludePath="[{AppVPackageDrive}]\Config.Msi" />
+      <FileExclusion ExcludePath="[{Local AppData}]\Temp" />
+      <RegistryExclusion ExcludePath="REGISTRY\MACHINE\SOFTWARE\Wow6432Node\Microsoft\Cryptography" />
+      <RegistryExclusion ExcludePath="REGISTRY\MACHINE\SOFTWARE\Microsoft\Cryptography" />
+      <RegistryExclusion ExcludePath="REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Antimalware" />
+      <RegistryExclusion ExcludePath="REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Antimalware Setup" />
+      <RegistryExclusion ExcludePath="REGISTRY\MACHINE\SOFTWARE\Microsoft\Microsoft Security Client" />
+      <RegistryExclusion ExcludePath="REGISTRY\MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Antimalware" />
+      <RegistryExclusion ExcludePath="REGISTRY\MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" />
+      <RegistryExclusion ExcludePath="REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU" />
+      <RegistryExclusion ExcludePath="REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\StreamMRU" />
+      <RegistryExclusion ExcludePath="REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Microsoft\Windows\CurrentVersion\Explorer\Streams" />
+      <RegistryExclusion ExcludePath="REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\Streams" />
+      <RegistryExclusion ExcludePath="REGISTRY\MACHINE\SOFTWARE\Microsoft\AppV" />
+      <RegistryExclusion ExcludePath="REGISTRY\MACHINE\SOFTWARE\Wow6432Node\Microsoft\AppV" />
+      <RegistryExclusion ExcludePath="REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Microsoft\AppV" />
+      <RegistryExclusion ExcludePath="REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Wow6432Node\Microsoft\AppV" />
+    </ExclusionItems>
+  </Settings>
+  <PrepareComputer DisableWindowsUpdateService="false" />
+  <SaveLocation PackagePath="E:\Source\Repos\msixhandson\MSIXPackage\CustomerList_1.0.0.0_x64__h91ms92gdsmmt.msix" TemplatePath="E:\Source\Repos\msixhandson\MSIXPackage\CustomerList_1.0.0.0_x64__h91ms92gdsmmt_template.xml" />
+  <Installer Path="E:\Source\Repos\msixhandson\MSI\CustomerList.Setup.msi" />
+  <VirtualMachine Name="MSIX Packaging Tool Environment" Username="southamerica\luisdem" />
+  <PackageInformation PackageName="CustomerList" PackageDisplayName="Customer List" PublisherName="CN=Contoso" PublisherDisplayName="Contoso Lab" Version="1.0.0.0" />
+</MsixPackagingToolTemplate>

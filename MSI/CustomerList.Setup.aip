@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="15.5.1" version="15.5.1" Modules="simple" RootPath="." Language="en" Id="{D6286559-8DD3-49A8-81C2-E7F58156D461}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;DigCertStoreComponent;MsiAssemblyComponent;MsiClassComponent;MsiServInstComponent;MsiExtComponent;TilesComponent;MsiOrgComponent;FixupComponent;MsiThemeComponent;BackgroundImagesComponent;UpdaterComponent;SerValComponent;MsiInstExSeqComponent;DictionaryComponent;MsiAppSearchComponent;MsiOdbcDataSrcComponent;CPLAppletComponent;ActSyncAppComponent;PreReqComponent;WebApplicationsComponent;MsiJavaComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;ActSyncAppComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="Microsoft"/>
+    <ROW Property="ProductCode" Value="1033:{D7B40577-D100-4CF1-AD03-B4045181C542} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="CustomerList.Setup"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{9F985575-8D2A-4305-BD42-864324AA1D65}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="CustomerList.Model.dll" ComponentId="{C98724FB-20CD-4EB7-9786-092D5D99A5D6}" Directory_="APPDIR" Attributes="0" KeyPath="CustomerList.Model.dll"/>
+    <ROW Component="CustomerList.Repository.dll" ComponentId="{1C2CD9E9-BD2A-42B3-B98C-039FAC0F5BDB}" Directory_="APPDIR" Attributes="0" KeyPath="CustomerList.Repository.dll"/>
+    <ROW Component="CustomerList.WPF.exe" ComponentId="{25D73405-FB72-4F8E-85A9-BA065B2346F2}" Directory_="APPDIR" Attributes="0" KeyPath="CustomerList.WPF.exe"/>
+    <ROW Component="CustomerList.WPF.exe.config" ComponentId="{285EF1D8-EB71-4F1A-8B02-C18AEC8BEF2D}" Directory_="APPDIR" Attributes="0" KeyPath="CustomerList.WPF.exe.config" Type="0"/>
+    <ROW Component="Microsoft.CSharp.dll" ComponentId="{3DB54C9D-6A42-4C10-895F-22913739BDCE}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.CSharp.dll"/>
+    <ROW Component="Microsoft.Data.Sqlite.dll" ComponentId="{8371B472-3199-4E41-8CCE-E4D2A8BCBC93}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Data.Sqlite.dll"/>
+    <ROW Component="Microsoft.DotNet.PlatformAbstractions.dll" ComponentId="{F873FED2-F6AC-4FF3-B49B-040E1F24A5B5}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.DotNet.PlatformAbstractions.dll"/>
+    <ROW Component="Microsoft.EntityFrameworkCore.Abstractions.dll" ComponentId="{2933739E-0779-4719-8A7E-8A2027331C9B}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.EntityFrameworkCore.Abstractions.dll"/>
+    <ROW Component="Microsoft.EntityFrameworkCore.Relational.dll" ComponentId="{BF515C6C-1DD5-41D9-AB60-4383E19FF208}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.EntityFrameworkCore.Relational.dll"/>
+    <ROW Component="Microsoft.EntityFrameworkCore.Sqlite.dll" ComponentId="{9F9150FE-6D32-47BF-A8B3-4A7FCBB19F24}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.EntityFrameworkCore.Sqlite.dll"/>
+    <ROW Component="Microsoft.EntityFrameworkCore.dll" ComponentId="{D002FBC9-B645-4EED-957D-415BC49EF0B7}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.EntityFrameworkCore.dll"/>
+    <ROW Component="Microsoft.Extensions.Caching.Abstractions.dll" ComponentId="{8DE87431-2E16-48DB-90CA-3A7E578F5FBC}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Caching.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Caching.Memory.dll" ComponentId="{8D553591-A089-4AC6-AB7A-86F2E67347AF}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Caching.Memory.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.Abstractions.dll" ComponentId="{86AF0577-B4B8-40DF-96BB-5A4A03B285D4}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.Binder.dll" ComponentId="{4FC25944-E9DC-4D15-9F23-FD9455601D5C}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Binder.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.dll" ComponentId="{C905728E-72D1-42D5-9D60-A09E8AAA74CB}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.dll"/>
+    <ROW Component="Microsoft.Extensions.DependencyInjection.Abstractions.dll" ComponentId="{25A45A5D-75CF-4D49-9964-E9D735B8A704}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.DependencyInjection.dll" ComponentId="{5F18C2F8-59A9-43F2-BA98-94B2B8461940}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.dll"/>
+    <ROW Component="Microsoft.Extensions.DependencyModel.dll" ComponentId="{F4EC18BB-195A-4D9B-A9AF-B64837832E35}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.DependencyModel.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.Abstractions.dll" ComponentId="{95177BBC-7EF5-492B-843B-E578C5FC5916}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.dll" ComponentId="{1E4A683C-C426-4806-8FEB-6CB344177870}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Logging.dll"/>
+    <ROW Component="Microsoft.Extensions.Options.dll" ComponentId="{B5289874-5C5E-4F1F-A927-C4BADDAADB54}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Options.dll"/>
+    <ROW Component="Microsoft.Extensions.Primitives.dll" ComponentId="{78D46338-01A8-4EB1-A754-1D64F5F68BBE}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Extensions.Primitives.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{C9946FA6-AD69-4C58-8A64-D93105328217}" Directory_="APPDIR" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="PresentationCore.dll" ComponentId="{288A6804-8392-4C67-916F-308382762D6C}" Directory_="APPDIR" Attributes="0" KeyPath="PresentationCore.dll"/>
+    <ROW Component="PresentationFramework.dll" ComponentId="{2D859A36-7C95-4E25-A905-449DDD3E9959}" Directory_="APPDIR" Attributes="0" KeyPath="PresentationFramework.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{D19087D9-9596-4832-BD98-01180789DE45}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Remotion.Linq.dll" ComponentId="{F2EE6285-20FE-4E2E-93B3-3EB46372C3F2}" Directory_="APPDIR" Attributes="0" KeyPath="Remotion.Linq.dll"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{E7095AC6-8F5F-46DF-8897-CC51F64C32E3}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="SQLitePCLRaw.batteries_green.dll" ComponentId="{96A36B00-EF50-460B-8915-DE0BB1024C24}" Directory_="APPDIR" Attributes="0" KeyPath="SQLitePCLRaw.batteries_green.dll"/>
+    <ROW Component="SQLitePCLRaw.batteries_v2.dll" ComponentId="{BF8FE649-C293-46CB-9095-0E657B590B54}" Directory_="APPDIR" Attributes="0" KeyPath="SQLitePCLRaw.batteries_v2.dll"/>
+    <ROW Component="SQLitePCLRaw.core.dll" ComponentId="{2B5B6BE8-5A08-49F6-A10D-A71425B2052D}" Directory_="APPDIR" Attributes="0" KeyPath="SQLitePCLRaw.core.dll"/>
+    <ROW Component="SQLitePCLRaw.provider.e_sqlite3.dll" ComponentId="{FE7BC0DC-1EA5-4AB6-AB19-1A13491FB010}" Directory_="APPDIR" Attributes="0" KeyPath="SQLitePCLRaw.provider.e_sqlite3.dll"/>
+    <ROW Component="System.Buffers.dll" ComponentId="{4854055A-5AF0-4E0E-9931-C564543FB672}" Directory_="APPDIR" Attributes="0" KeyPath="System.Buffers.dll"/>
+    <ROW Component="System.Collections.Immutable.dll" ComponentId="{3B08F7E5-42CB-4CCB-97B3-3A5C63F40490}" Directory_="APPDIR" Attributes="0" KeyPath="System.Collections.Immutable.dll"/>
+    <ROW Component="System.ComponentModel.Annotations.dll" ComponentId="{C3B60C61-B989-4CE8-AA15-96A8A36A5419}" Directory_="APPDIR" Attributes="0" KeyPath="System.ComponentModel.Annotations.dll"/>
+    <ROW Component="System.ComponentModel.DataAnnotations.dll" ComponentId="{4FD19B20-4CD2-4069-8E4B-905C739B2257}" Directory_="APPDIR" Attributes="0" KeyPath="System.ComponentModel.DataAnnotations.dll"/>
+    <ROW Component="System.Core.dll" ComponentId="{BAB45DAE-6A8F-4E73-BFA2-29DBEC42A521}" Directory_="APPDIR" Attributes="0" KeyPath="System.Core.dll"/>
+    <ROW Component="System.Data.DataSetExtensions.dll" ComponentId="{C7A3360C-88AC-4144-8305-3757E7588A8A}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.DataSetExtensions.dll"/>
+    <ROW Component="System.Data.dll" ComponentId="{086AB150-D8E6-441C-B2AF-0C4EE7FBF472}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.dll"/>
+    <ROW Component="System.Diagnostics.DiagnosticSource.dll" ComponentId="{226EB945-EBD3-4DA7-ACD5-4F700CA65DAE}" Directory_="APPDIR" Attributes="0" KeyPath="System.Diagnostics.DiagnosticSource.dll"/>
+    <ROW Component="System.Interactive.Async.dll" ComponentId="{B77DDC42-3B08-4FDB-9AD2-5A2F93CBD922}" Directory_="APPDIR" Attributes="0" KeyPath="System.Interactive.Async.dll"/>
+    <ROW Component="System.Memory.dll" ComponentId="{FA5DE61C-3590-4722-9AB1-2E833A626372}" Directory_="APPDIR" Attributes="0" KeyPath="System.Memory.dll"/>
+    <ROW Component="System.Net.Http.dll" ComponentId="{73595607-08EA-46E0-8381-BED3A091394C}" Directory_="APPDIR" Attributes="0" KeyPath="System.Net.Http.dll"/>
+    <ROW Component="System.Numerics.Vectors.dll" ComponentId="{5A475FA2-89F0-4F1F-AE2E-24D58BAF8915}" Directory_="APPDIR" Attributes="0" KeyPath="System.Numerics.Vectors.dll"/>
+    <ROW Component="System.Numerics.dll" ComponentId="{F7461DD6-D0C8-494A-909F-A82A979C778B}" Directory_="APPDIR" Attributes="0" KeyPath="System.Numerics.dll"/>
+    <ROW Component="System.Runtime.CompilerServices.Unsafe.dll" ComponentId="{C52B0C3A-BC72-4B62-84DC-A9C6F824EAD5}" Directory_="APPDIR" Attributes="0" KeyPath="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Component="System.Runtime.InteropServices.RuntimeInformation.dll" ComponentId="{06AFC0FD-D204-4720-81F8-41DD267D5202}" Directory_="APPDIR" Attributes="0" KeyPath="System.Runtime.InteropServices.RuntimeInformation.dll"/>
+    <ROW Component="System.Xaml.dll" ComponentId="{45D32477-F386-4B6F-A4EB-BEDC70C1B2FA}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xaml.dll"/>
+    <ROW Component="System.Xml.Linq.dll" ComponentId="{D72564E7-E709-4403-AB0E-B4D69CF5131E}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
+    <ROW Component="System.Xml.dll" ComponentId="{6DCCF1FF-32DD-4899-BE42-4B3651EAAE56}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.dll"/>
+    <ROW Component="System.dll" ComponentId="{0E2A3A14-7F01-4E8F-AB2D-A2A9992A08FF}" Directory_="APPDIR" Attributes="0" KeyPath="System.dll"/>
+    <ROW Component="WindowsBase.dll" ComponentId="{A47E166A-A64D-40C5-B521-13D466D11062}" Directory_="APPDIR" Attributes="0" KeyPath="WindowsBase.dll"/>
+    <ROW Component="mscorlib.dll" ComponentId="{FAAA44BC-7C88-4F8E-A204-A471597B3E01}" Directory_="APPDIR" Attributes="0" KeyPath="mscorlib.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="CustomerList.Model.dll CustomerList.Repository.dll CustomerList.WPF.exe CustomerList.WPF.exe.config Microsoft.CSharp.dll Microsoft.Data.Sqlite.dll Microsoft.DotNet.PlatformAbstractions.dll Microsoft.EntityFrameworkCore.Abstractions.dll Microsoft.EntityFrameworkCore.Relational.dll Microsoft.EntityFrameworkCore.Sqlite.dll Microsoft.EntityFrameworkCore.dll Microsoft.Extensions.Caching.Abstractions.dll Microsoft.Extensions.Caching.Memory.dll Microsoft.Extensions.Configuration.Abstractions.dll Microsoft.Extensions.Configuration.Binder.dll Microsoft.Extensions.Configuration.dll Microsoft.Extensions.DependencyInjection.Abstractions.dll Microsoft.Extensions.DependencyInjection.dll Microsoft.Extensions.DependencyModel.dll Microsoft.Extensions.Logging.Abstractions.dll Microsoft.Extensions.Logging.dll Microsoft.Extensions.Options.dll Microsoft.Extensions.Primitives.dll Newtonsoft.Json.dll PresentationCore.dll PresentationFramework.dll ProductInformation Remotion.Linq.dll SHORTCUTDIR SQLitePCLRaw.batteries_green.dll SQLitePCLRaw.batteries_v2.dll SQLitePCLRaw.core.dll SQLitePCLRaw.provider.e_sqlite3.dll System.Buffers.dll System.Collections.Immutable.dll System.ComponentModel.Annotations.dll System.ComponentModel.DataAnnotations.dll System.Core.dll System.Data.DataSetExtensions.dll System.Data.dll System.Diagnostics.DiagnosticSource.dll System.Interactive.Async.dll System.Memory.dll System.Net.Http.dll System.Numerics.Vectors.dll System.Numerics.dll System.Runtime.CompilerServices.Unsafe.dll System.Runtime.InteropServices.RuntimeInformation.dll System.Xaml.dll System.Xml.Linq.dll System.Xml.dll System.dll WindowsBase.dll mscorlib.dll"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Contoso.db" Component_="CustomerList.WPF.exe.config" FileName="Contoso.db" Attributes="0" SourcePath="..\CustomerList.WPF\bin\Debug\Assets\Contoso.db" SelfReg="false" NextFile="Microsoft.Data.Sqlite.dll"/>
+    <ROW File="CustomerList.Model.dll" Component_="CustomerList.Model.dll" FileName="CUSTOM~1.DLL|CustomerList.Model.dll" Attributes="0" SourcePath="..\CustomerList.Model\bin\Debug\CustomerList.Model.dll" SelfReg="false" NextFile="CustomerList.Repository.dll"/>
+    <ROW File="CustomerList.Repository.dll" Component_="CustomerList.Repository.dll" FileName="CUSTOM~2.DLL|CustomerList.Repository.dll" Attributes="0" SourcePath="..\CustomerList.Repository\bin\Debug\CustomerList.Repository.dll" SelfReg="false"/>
+    <ROW File="CustomerList.WPF.exe" Component_="CustomerList.WPF.exe" FileName="CUSTOM~1.EXE|CustomerList.WPF.exe" Attributes="0" SourcePath="..\CustomerList.WPF\bin\Debug\CustomerList.WPF.exe" SelfReg="false" NextFile="CustomerList.WPF.exe.config" DigSign="true"/>
+    <ROW File="CustomerList.WPF.exe.config" Component_="CustomerList.WPF.exe.config" FileName="CUSTOM~1.CON|CustomerList.WPF.exe.config" Attributes="0" SourcePath="..\CustomerList.WPF\bin\Debug\CustomerList.WPF.exe.config" SelfReg="false" NextFile="System.ComponentModel.Annotations.dll"/>
+    <ROW File="Microsoft.CSharp.dll" Component_="Microsoft.CSharp.dll" FileName="MICROS~7.DLL|Microsoft.CSharp.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll" SelfReg="false" NextFile="Microsoft.DotNet.PlatformAbstractions.dll"/>
+    <ROW File="Microsoft.Data.Sqlite.dll" Component_="Microsoft.Data.Sqlite.dll" FileName="MICROS~1.DLL|Microsoft.Data.Sqlite.dll" Attributes="0" SourcePath="..\packages\Microsoft.Data.Sqlite.Core.2.2.0\lib\netstandard2.0\Microsoft.Data.Sqlite.dll" SelfReg="false" NextFile="System.Collections.Immutable.dll"/>
+    <ROW File="Microsoft.DotNet.PlatformAbstractions.dll" Component_="Microsoft.DotNet.PlatformAbstractions.dll" FileName="MICROS~8.DLL|Microsoft.DotNet.PlatformAbstractions.dll" Attributes="0" SourcePath="..\packages\Microsoft.DotNet.PlatformAbstractions.2.1.0\lib\net45\Microsoft.DotNet.PlatformAbstractions.dll" SelfReg="false" NextFile="Microsoft.Extensions.Options.dll"/>
+    <ROW File="Microsoft.EntityFrameworkCore.Abstractions.dll" Component_="Microsoft.EntityFrameworkCore.Abstractions.dll" FileName="MICROS~6.DLL|Microsoft.EntityFrameworkCore.Abstractions.dll" Attributes="0" SourcePath="..\packages\Microsoft.EntityFrameworkCore.Abstractions.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll" SelfReg="false" NextFile="Microsoft.CSharp.dll"/>
+    <ROW File="Microsoft.EntityFrameworkCore.Relational.dll" Component_="Microsoft.EntityFrameworkCore.Relational.dll" FileName="MICRO~11.DLL|Microsoft.EntityFrameworkCore.Relational.dll" Attributes="0" SourcePath="..\packages\Microsoft.EntityFrameworkCore.Relational.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll" SelfReg="false" NextFile="Microsoft.EntityFrameworkCore.Sqlite.dll"/>
+    <ROW File="Microsoft.EntityFrameworkCore.Sqlite.dll" Component_="Microsoft.EntityFrameworkCore.Sqlite.dll" FileName="MICRO~12.DLL|Microsoft.EntityFrameworkCore.Sqlite.dll" Attributes="0" SourcePath="..\packages\Microsoft.EntityFrameworkCore.Sqlite.Core.2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Sqlite.dll" SelfReg="false" NextFile="System.Runtime.InteropServices.RuntimeInformation.dll"/>
+    <ROW File="Microsoft.EntityFrameworkCore.dll" Component_="Microsoft.EntityFrameworkCore.dll" FileName="MICROS~4.DLL|Microsoft.EntityFrameworkCore.dll" Attributes="0" SourcePath="..\packages\Microsoft.EntityFrameworkCore.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll" SelfReg="false" NextFile="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW File="Microsoft.Extensions.Caching.Abstractions.dll" Component_="Microsoft.Extensions.Caching.Abstractions.dll" FileName="MICRO~14.DLL|Microsoft.Extensions.Caching.Abstractions.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.Caching.Abstractions.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll" SelfReg="false" NextFile="Microsoft.Extensions.Caching.Memory.dll"/>
+    <ROW File="Microsoft.Extensions.Caching.Memory.dll" Component_="Microsoft.Extensions.Caching.Memory.dll" FileName="MICRO~15.DLL|Microsoft.Extensions.Caching.Memory.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.Caching.Memory.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll" SelfReg="false" NextFile="Newtonsoft.Json.dll"/>
+    <ROW File="Microsoft.Extensions.Configuration.Abstractions.dll" Component_="Microsoft.Extensions.Configuration.Abstractions.dll" FileName="MICRO~17.DLL|Microsoft.Extensions.Configuration.Abstractions.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.Configuration.Abstractions.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll" SelfReg="false" NextFile="Microsoft.Extensions.DependencyInjection.dll"/>
+    <ROW File="Microsoft.Extensions.Configuration.Binder.dll" Component_="Microsoft.Extensions.Configuration.Binder.dll" FileName="MICRO~13.DLL|Microsoft.Extensions.Configuration.Binder.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.Configuration.Binder.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll" SelfReg="false" NextFile="Microsoft.Extensions.Caching.Abstractions.dll"/>
+    <ROW File="Microsoft.Extensions.Configuration.dll" Component_="Microsoft.Extensions.Configuration.dll" FileName="MICRO~16.DLL|Microsoft.Extensions.Configuration.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.Configuration.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll" SelfReg="false" NextFile="Microsoft.Extensions.Configuration.Abstractions.dll"/>
+    <ROW File="Microsoft.Extensions.DependencyInjection.Abstractions.dll" Component_="Microsoft.Extensions.DependencyInjection.Abstractions.dll" FileName="MICROS~5.DLL|Microsoft.Extensions.DependencyInjection.Abstractions.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" SelfReg="false" NextFile="Microsoft.EntityFrameworkCore.Abstractions.dll"/>
+    <ROW File="Microsoft.Extensions.DependencyInjection.dll" Component_="Microsoft.Extensions.DependencyInjection.dll" FileName="MICRO~18.DLL|Microsoft.Extensions.DependencyInjection.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.DependencyInjection.3.0.0-preview.18572.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll" SelfReg="false" NextFile="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW File="Microsoft.Extensions.DependencyModel.dll" Component_="Microsoft.Extensions.DependencyModel.dll" FileName="MICROS~3.DLL|Microsoft.Extensions.DependencyModel.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.DependencyModel.2.1.0\lib\net451\Microsoft.Extensions.DependencyModel.dll" SelfReg="false" NextFile="Microsoft.EntityFrameworkCore.dll"/>
+    <ROW File="Microsoft.Extensions.Logging.Abstractions.dll" Component_="Microsoft.Extensions.Logging.Abstractions.dll" FileName="MICRO~19.DLL|Microsoft.Extensions.Logging.Abstractions.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.Logging.Abstractions.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll" SelfReg="false" NextFile="mscorlib.dll"/>
+    <ROW File="Microsoft.Extensions.Logging.dll" Component_="Microsoft.Extensions.Logging.dll" FileName="MICRO~10.DLL|Microsoft.Extensions.Logging.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.Logging.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.Extensions.Logging.dll" SelfReg="false" NextFile="Microsoft.EntityFrameworkCore.Relational.dll"/>
+    <ROW File="Microsoft.Extensions.Options.dll" Component_="Microsoft.Extensions.Options.dll" FileName="MICROS~9.DLL|Microsoft.Extensions.Options.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.Options.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll" SelfReg="false" NextFile="Microsoft.Extensions.Logging.dll"/>
+    <ROW File="Microsoft.Extensions.Primitives.dll" Component_="Microsoft.Extensions.Primitives.dll" FileName="MICROS~2.DLL|Microsoft.Extensions.Primitives.dll" Attributes="0" SourcePath="..\packages\Microsoft.Extensions.Primitives.3.0.0-preview.18572.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll" SelfReg="false" NextFile="Microsoft.Extensions.DependencyModel.dll"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll" SelfReg="false" NextFile="Microsoft.Extensions.Configuration.dll"/>
+    <ROW File="PresentationCore.dll" Component_="PresentationCore.dll" FileName="PRESEN~1.DLL|PresentationCore.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationCore.dll" SelfReg="false" NextFile="PresentationFramework.dll"/>
+    <ROW File="PresentationFramework.dll" Component_="PresentationFramework.dll" FileName="PRESEN~2.DLL|PresentationFramework.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationFramework.dll" SelfReg="false" NextFile="SQLitePCLRaw.batteries_v2.dll"/>
+    <ROW File="Remotion.Linq.dll" Component_="Remotion.Linq.dll" FileName="REMOTI~1.DLL|Remotion.Linq.dll" Attributes="0" SourcePath="..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll" SelfReg="false" NextFile="SQLitePCLRaw.batteries_green.dll"/>
+    <ROW File="SQLitePCLRaw.batteries_green.dll" Component_="SQLitePCLRaw.batteries_green.dll" FileName="SQLITE~2.DLL|SQLitePCLRaw.batteries_green.dll" Attributes="0" SourcePath="..\packages\SQLitePCLRaw.bundle_green.1.1.11\lib\net45\SQLitePCLRaw.batteries_green.dll" SelfReg="false" NextFile="SQLitePCLRaw.core.dll"/>
+    <ROW File="SQLitePCLRaw.batteries_v2.dll" Component_="SQLitePCLRaw.batteries_v2.dll" FileName="SQLITE~1.DLL|SQLitePCLRaw.batteries_v2.dll" Attributes="0" SourcePath="..\packages\SQLitePCLRaw.bundle_green.1.1.11\lib\net45\SQLitePCLRaw.batteries_v2.dll" SelfReg="false" NextFile="Remotion.Linq.dll"/>
+    <ROW File="SQLitePCLRaw.core.dll" Component_="SQLitePCLRaw.core.dll" FileName="SQLITE~3.DLL|SQLitePCLRaw.core.dll" Attributes="0" SourcePath="..\packages\SQLitePCLRaw.core.1.1.11\lib\net45\SQLitePCLRaw.core.dll" SelfReg="false" NextFile="System.Xaml.dll"/>
+    <ROW File="SQLitePCLRaw.provider.e_sqlite3.dll" Component_="SQLitePCLRaw.provider.e_sqlite3.dll" FileName="SQLITE~4.DLL|SQLitePCLRaw.provider.e_sqlite3.dll" Attributes="0" SourcePath="..\packages\SQLitePCLRaw.provider.e_sqlite3.net45.1.1.11\lib\net45\SQLitePCLRaw.provider.e_sqlite3.dll" SelfReg="false" NextFile="System.Buffers.dll"/>
+    <ROW File="System.Buffers.dll" Component_="System.Buffers.dll" FileName="SYSTEM~9.DLL|System.Buffers.dll" Attributes="0" SourcePath="..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll" SelfReg="false" NextFile="System.Core.dll"/>
+    <ROW File="System.Collections.Immutable.dll" Component_="System.Collections.Immutable.dll" FileName="SYSTEM~2.DLL|System.Collections.Immutable.dll" Attributes="0" SourcePath="..\packages\System.Collections.Immutable.1.6.0-preview.18571.3\lib\netstandard2.0\System.Collections.Immutable.dll" SelfReg="false" NextFile="version.txt"/>
+    <ROW File="System.ComponentModel.Annotations.dll" Component_="System.ComponentModel.Annotations.dll" FileName="SYSTEM~1.DLL|System.ComponentModel.Annotations.dll" Attributes="0" SourcePath="..\packages\System.ComponentModel.Annotations.4.6.0-preview.18571.3\lib\net461\System.ComponentModel.Annotations.dll" SelfReg="false" NextFile="Contoso.db"/>
+    <ROW File="System.ComponentModel.DataAnnotations.dll" Component_="System.ComponentModel.DataAnnotations.dll" FileName="SYSTEM~3.DLL|System.ComponentModel.DataAnnotations.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.ComponentModel.DataAnnotations.dll" SelfReg="false" NextFile="Microsoft.Extensions.Primitives.dll"/>
+    <ROW File="System.Core.dll" Component_="System.Core.dll" FileName="SYSTE~10.DLL|System.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" SelfReg="false" NextFile="System.Data.DataSetExtensions.dll"/>
+    <ROW File="System.Data.DataSetExtensions.dll" Component_="System.Data.DataSetExtensions.dll" FileName="SYSTE~11.DLL|System.Data.DataSetExtensions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" SelfReg="false" NextFile="System.Diagnostics.DiagnosticSource.dll"/>
+    <ROW File="System.Data.dll" Component_="System.Data.dll" FileName="SYSTEM~8.DLL|System.Data.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" SelfReg="false" NextFile="SQLitePCLRaw.provider.e_sqlite3.dll"/>
+    <ROW File="System.Diagnostics.DiagnosticSource.dll" Component_="System.Diagnostics.DiagnosticSource.dll" FileName="SYSTE~12.DLL|System.Diagnostics.DiagnosticSource.dll" Attributes="0" SourcePath="..\packages\System.Diagnostics.DiagnosticSource.4.6.0-preview.18571.3\lib\net46\System.Diagnostics.DiagnosticSource.dll" SelfReg="false" NextFile="System.dll"/>
+    <ROW File="System.Interactive.Async.dll" Component_="System.Interactive.Async.dll" FileName="SYSTEM~6.DLL|System.Interactive.Async.dll" Attributes="0" SourcePath="..\packages\System.Interactive.Async.3.2.0\lib\net46\System.Interactive.Async.dll" SelfReg="false" NextFile="Microsoft.Extensions.Configuration.Binder.dll"/>
+    <ROW File="System.Memory.dll" Component_="System.Memory.dll" FileName="SYSTE~13.DLL|System.Memory.dll" Attributes="0" SourcePath="..\packages\System.Memory.4.5.2-servicing-27114-05\lib\netstandard2.0\System.Memory.dll" SelfReg="false" NextFile="System.Net.Http.dll"/>
+    <ROW File="System.Net.Http.dll" Component_="System.Net.Http.dll" FileName="SYSTE~14.DLL|System.Net.Http.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" SelfReg="false" NextFile="System.Numerics.dll"/>
+    <ROW File="System.Numerics.Vectors.dll" Component_="System.Numerics.Vectors.dll" FileName="SYSTE~16.DLL|System.Numerics.Vectors.dll" Attributes="0" SourcePath="..\packages\System.Numerics.Vectors.4.6.0-preview.18571.3\lib\net46\System.Numerics.Vectors.dll" SelfReg="false" NextFile="System.Xml.dll"/>
+    <ROW File="System.Numerics.dll" Component_="System.Numerics.dll" FileName="SYSTE~15.DLL|System.Numerics.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Numerics.dll" SelfReg="false" NextFile="System.Numerics.Vectors.dll"/>
+    <ROW File="System.Runtime.CompilerServices.Unsafe.dll" Component_="System.Runtime.CompilerServices.Unsafe.dll" FileName="SYSTEM~4.DLL|System.Runtime.CompilerServices.Unsafe.dll" Attributes="0" SourcePath="..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0-preview.18571.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" SelfReg="false" NextFile="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW File="System.Runtime.InteropServices.RuntimeInformation.dll" Component_="System.Runtime.InteropServices.RuntimeInformation.dll" FileName="SYSTEM~5.DLL|System.Runtime.InteropServices.RuntimeInformation.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\System.Runtime.InteropServices.RuntimeInformation.dll" SelfReg="false" NextFile="System.Interactive.Async.dll"/>
+    <ROW File="System.Xaml.dll" Component_="System.Xaml.dll" FileName="SYSTEM~7.DLL|System.Xaml.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xaml.dll" SelfReg="false" NextFile="System.Data.dll"/>
+    <ROW File="System.Xml.Linq.dll" Component_="System.Xml.Linq.dll" FileName="SYSTE~18.DLL|System.Xml.Linq.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" SelfReg="false" NextFile="WindowsBase.dll"/>
+    <ROW File="System.Xml.dll" Component_="System.Xml.dll" FileName="SYSTE~17.DLL|System.Xml.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" SelfReg="false" NextFile="System.Xml.Linq.dll"/>
+    <ROW File="System.dll" Component_="System.dll" FileName="System.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" SelfReg="false" NextFile="System.Memory.dll"/>
+    <ROW File="WindowsBase.dll" Component_="WindowsBase.dll" FileName="WINDOW~1.DLL|WindowsBase.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\WindowsBase.dll" SelfReg="false" NextFile="CustomerList.Model.dll"/>
+    <ROW File="mscorlib.dll" Component_="mscorlib.dll" FileName="mscorlib.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" SelfReg="false" NextFile="PresentationCore.dll"/>
+    <ROW File="version.txt" Component_="CustomerList.WPF.exe.config" FileName="version.txt" Attributes="0" SourcePath="..\CustomerList.WPF\bin\Debug\version.txt" SelfReg="false" NextFile="System.ComponentModel.DataAnnotations.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="." Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="CustomerList.WPF.exe" Directory_="SHORTCUTDIR" Name="CUSTOM~1.EXE|CustomerList.WPF.exe" Component_="CustomerList.WPF.exe" Target="[#CustomerList.WPF.exe]" Description="CustomerList.WPF.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="CustomerList.WPF.exe_1" Directory_="DesktopFolder" Name="CUSTOM~1.EXE|CustomerList.WPF.exe" Component_="CustomerList.WPF.exe" Target="[#CustomerList.WPF.exe]" Description="CustomerList.WPF.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
