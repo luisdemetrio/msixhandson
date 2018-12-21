@@ -50,7 +50,7 @@
       <RegistryExclusion ExcludePath="REGISTRY\USER\[{AppVCurrentUserSID}]\Software\Wow6432Node\Microsoft\AppV" />
     </ExclusionItems>
   </Settings>
-  <PrepareComputer DisableWindowsUpdateService="false" />
+  <PrepareComputer DisableSmsHostService="false" />
   <SaveLocation PackagePath="E:\Source\Repos\msixhandson\MSIXPackage\CustomerList_1.0.0.0_x64__h91ms92gdsmmt.msix" TemplatePath="E:\Source\Repos\msixhandson\MSIXPackage\CustomerList_1.0.0.0_x64__h91ms92gdsmmt_template.xml" />
   <Installer Path="E:\Source\Repos\msixhandson\MSI\CustomerList.Setup.msi" />
   <VirtualMachine Name="MSIX Packaging Tool Environment" Username="southamerica\luisdem" />
